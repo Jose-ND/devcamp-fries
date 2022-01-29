@@ -1,0 +1,67 @@
+.contact-form > .contact-form-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contact-form > .contact-form-group input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: inherit;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid #11122b;
+    padding: 1.5rem 2rem;
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+/* this gives the cute box/shadow/and gold color when you click on the "name" and "email" */ 
+.contact-form > .contact-form-group input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #cea135;
+}
+/* this is the shadow and box effect for the textarea */
+.contact-form > .contact-form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: 3px solid #cea135;
+}
+/* placeholder color change */
+.contact-form > .contact-form-group input::-webkit-input-placeholder, .contact-form > .contact-form-group textarea::-webkit-input-placeholder {
+    color: #11122b;
+}
+/* command that makes placeholder disappear when clicking on the bar */
+.contact-form > .contact-form-group input:focus::-webkit-input-placeholder, .contact-form > .contact-form-group textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.contact-form > .contact-form-group textarea {
+    margin-top: 30px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: inherit;
+    border-radius: 3px;
+    border: 2px solid #11122b;
+    width: 100%;
+    height: 200px;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s;
+}
+
+.contact-form > .contact-form-group label {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #cea135;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.contact-form > .contact-form-group input:focus + label, .contact-form > .contact-form-group textarea:focus + label {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(.6rem);
+    
+}
